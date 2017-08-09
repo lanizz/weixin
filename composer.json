@@ -1,0 +1,39 @@
+{
+  "name": "lanizz/weixin",
+  "description": "微信接口实现",
+  "keywords": [
+    "weixin","api"
+  ],
+  "homepage": "http://github.com/lanizz/weixin",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Jinming Lan",
+      "email": "lanjinming@hotmail.com",
+      "homepage": "http://blog.binblue.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "lanizz/php-helper":"dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0|~5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lanizz\\Weixin\\": "src/",
+      "Lanizz\\Weixin\\Request\\": "src/Request/",
+      "Lanizz\\Weixin\\Http\\": "src/Http/",
+      "Lanizz\\Weixin\\Message\\": "src/Message/",
+      "Lanizz\\Weixin\\Support\\": "src/Support/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
